@@ -189,11 +189,14 @@ const AddUser = ({ onCancel, onRoleAdded }: AddRoleProps) => {
                     </p>
                   </div>
                 </div>
+              </div>
+                <div>
+            </div>
+
                 {errors.image && (
                   <p className="text-sm text-red-500">{errors.image.message}</p>
                 )}
-              </div>
-            </div>
+                </div>
             <div className="flex-auto px-4"></div>
           </div>
         </div>

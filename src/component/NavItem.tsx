@@ -15,7 +15,7 @@ const NavItem: React.FC<NavItemProps> = ({ to, icon:Icon, text }) => {
             end={to === "/admin"}
             className={({ isActive }) => 
                 `flex items-center p-2 mb-2 text-lg rounded-sm ${
-                    isActive ? "bg-yellow-200" : "bg-slate-100"
+                    isActive ? "bg-yellow-100" : "bg-slate-100"
                 }`
             }
         >

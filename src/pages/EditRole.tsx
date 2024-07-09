@@ -55,7 +55,7 @@ const EditRole: React.FC = () => {
       );
       if (response.data) {
         toast.success(response.data.message);
-        navigate("/admin/roles");
+        navigate("/roles");
       }
     } catch (err) {
       handleApiError(err);

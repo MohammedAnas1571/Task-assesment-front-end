@@ -17,7 +17,7 @@ const TableContent: React.FC<TableContentProps> = ({ columns, data }) => {
   return (
     <div className="overflow-x-auto">
       <table {...getTableProps()} className="w-full divide-y divide-gray-200">
-        <thead className="bg-gray-50">
+        <thead className="bg-yellow-100">
           {headerGroups.map((headerGroup: HeaderGroup<any>) => (
             <tr {...headerGroup.getHeaderGroupProps()} key={headerGroup.id}>
               {headerGroup.headers.map((column) => {
