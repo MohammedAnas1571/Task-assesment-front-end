@@ -27,7 +27,7 @@ const NavBar: React.FC<NavBarProps> = ({ name, icon: Icon, onRoleAdded }) => {
         <div>
           <button
             onClick={onRoleAdded}
-            className="bg-violet-700 px-4 py-2 rounded text-white whitespace-nowrap"
+            className="bg-violet-900 px-4 py-2 rounded text-white whitespace-nowrap"
           >
             Add New
           </button>

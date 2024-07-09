@@ -28,7 +28,7 @@ const Header = () => {
     }
    }
   return (
-    <div className='h-16 fixed top-0 w-full z-50 bg-violet-700 text-white'>
+    <div className='h-16 fixed top-0 w-full z-50 bg-violet-900 text-white'>
       <div className='flex justify-between items-center h-full px-5'>
         <div className="flex items-center">
           <button className='mr-2 md:hidden'>

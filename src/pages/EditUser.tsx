@@ -103,137 +103,7 @@ const EditUser = () => {
   const { ref: imageRef, ...imageRegister } = register("image");
 
   return (
-    // <div >
-    //   <div className="flex px-2 items-center">
-    //     <AiOutlineArrowLeft size={20} onClick={() => navigate("/admin/users")} />
-    //     <h1 className="text-xl font-bold ml-2">Edit User</h1>
-    //   </div>
-    //   <form onSubmit={handleSubmit(onSubmit)}>
-    //     <div className="flex justify-around">
-    //       <div>
-    //         <Input label="Name" type="text" {...register("name")} />
-    //         {errors.name && (
-    //           <p className="text-sm text-red-500">{errors.name.message}</p>
-    //         )}
-    //       </div>
-    //       <div>
-    //         <Input label="Mobile" type="text" {...register("mobile")} />
-    //         {errors.mobile && (
-    //           <p className="text-sm text-red-500">{errors.mobile.message}</p>
-    //         )}
-    //       </div>
-    //       <div>
-    //         <Input label="Email-Id" type="text" {...register("email")} />
-    //         {errors.email && (
-    //           <p className="text-sm text-red-500">{errors.email.message}</p>
-    //         )}
-    //       </div>
-    //     </div>
-    //     <div className="flex justify-around p-2 py-5">
-    //       <div className="">
-    //         <div className="relative mt-5">
-    //           <label
-    //             className="text-sm text-gray-400 absolute px-1 bg-white left-2"
-    //             style={{ transform: "translateY(-10px)" }}
-    //           >
-    //             Role
-    //           </label>
-    //           <select
-    //             className="border border-gray-700 rounded-md px-4 h-12 outline-none w-72"
-    //             {...register("role")}
-    //             defaultValue=""
-    //           >
-    //             <option value="" disabled>
-    //               Select Role
-    //             </option>
-    //             {roles.map((role) => (
-    //               <option key={role._id} value={role._id}>
-    //                 {role.rolename}
-    //               </option>
-    //             ))}
-    //           </select>
-    //           {errors.role && (
-    //             <p className="text-sm text-red-500">{errors.role.message}</p>
-    //           )}
-    //         </div>
-    //       </div>
-
-    //         <div className="flex gap-5">
-    //           <div className="relative mt-5 border border-gray-700 rounded-md h-24 w-36 flex items-center justify-center">
-    //             <label
-    //               className="text-sm text-gray-400 absolute top-0 left-2 px-1 bg-white"
-    //               style={{ transform: "translateY(-10px)" }}
-    //             >
-    //               Upload-image
-    //             </label>
-    //             <img
-    //               src={selectedImage}
-    //               alt="Profile Picture"
-    //               className="h-15 w-15 rounded-full object-cover"
-    //             />
-    //           </div>
-    //           <div className="relative mt-5 border border-dashed border-gray-400 rounded-md h-24 w-36 flex items-center justify-center">
-    //             <div className="flex flex-col items-center">
-    //               <img
-    //                 src="/public/imageupload.png"
-    //                 alt="Profile Picture"
-    //                 className="h-10 w-10 my-2 cursor-pointer rounded-full object-cover"
-    //                 onClick={() => inputRef.current?.click()}
-    //               />
-    //               <input
-    //                 type="file"
-    //                 ref={(e) => {
-    //                   imageRef(e);
-    //                   inputRef.current = e;
-    //                 }}
-    //                 {...imageRegister}
-    //                 onChange={handleImageChange}
-    //                 hidden
-    //                 accept="image/*"
-    //               />
-    //               <p className="text-[10px] mb-2 text-center">
-    //                 Upload maximum allowed file size is 10 MB
-    //               </p>
-    //             </div>
-    //           </div>
-    //         </div>
-    //         {errors.image && (
-    //           <p className="text-sm text-red-500">{errors.image.message}</p>
-    //         )}
-
-    //       <div className="relative mt-5">
-    //         <label
-    //           className="text-sm text-gray-400 absolute px-1 bg-white left-2"
-    //           style={{ transform: "translateY(-10px)" }}
-    //         >
-    //           Status
-    //         </label>
-    //         <select
-    //           className="border border-gray-700 rounded-md px-4 h-12 outline-none w-72"
-    //           {...register('isBlock')}
-    //         >
-    //           <option  value="false">Active</option>
-    //           <option  value="true">Inactive</option>
-    //         </select>
-    //     </div>
-    //     </div>
-    //     <div className="absolute bottom-5 right-5 flex gap-5">
-    //       <button
-    //         type="button"
-    //         onClick={() => navigate("/admin/users")}
-    //         className="border rounded-lg p-1 w-20"
-    //       >
-    //         Cancel
-    //       </button>
-    //       <button
-    //         type="submit"
-    //         className="bg-violet-700 text-white border rounded-lg p-1 w-20"
-    //       >
-    //         Save
-    //       </button>
-    //     </div>
-    //   </form>
-    // </div>
+   
 
     <div className="flex-grow flex-shrink flex flex-col">
       <div className="flex p-2 items-center flex-shrink-0">
@@ -379,7 +249,7 @@ const EditUser = () => {
           </button>
           <button
             type="submit"
-            className="bg-violet-700 text-white border rounded-full px-8 h-9"
+            className="bg-violet-900 text-white border rounded-full px-8 h-9"
           >
             Save
           </button>

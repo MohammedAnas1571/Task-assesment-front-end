@@ -63,54 +63,6 @@ const EditRole: React.FC = () => {
   };
 
   return (
-    // <div className="relative h-screen">
-    //   <div className="flex p-2 items-center">
-    //     <AiOutlineArrowLeft size={20}  onClick={() => navigate("/admin/users")} />
-    //     <h1 className="text-xl font-bold ml-2">Edit Role</h1>
-    //   </div>
-    //   <form onSubmit={handleSubmit(onSubmit)}>
-    //     <div className="flex gap-7">
-    //       <div>
-    //       <Input  label="Role Name" type="text" {...register('rolename')}  />
-    //       {errors.rolename && (
-    //         <p className="text-sm text-red-500">{errors.rolename.message}</p>
-    //       )}
-    //       </div>
-    //       <div className="relative mt-5">
-    //         <label
-    //           className="text-sm text-gray-400 absolute px-1 bg-white left-2"
-    //           style={{ transform: "translateY(-10px)" }}
-    //         >
-    //           Status
-    //         </label>
-    //         <select
-    //           className="border border-gray-700 rounded-md px-4 h-12 outline-none w-72"
-    //           {...register('isBlock')}
-    //         >
-    //           <option  value="false">Active</option>
-    //           <option  value="true">Inactive</option>
-    //         </select>
-
-    //       </div>
-    //     </div>
-    //     <div className="absolute bottom-5 right-5 flex gap-5">
-    //       <button
-    //         type="button"
-    //         className="border rounded-lg p-1 w-20"
-    //         onClick={() => navigate("/admin/roles")}
-    //       >
-    //         Cancel
-    //       </button>
-    //       <button
-    //         type="submit"
-    //         className="bg-violet-700 text-white border rounded-lg p-1 w-20"
-    //       >
-    //         Save
-    //       </button>
-    //     </div>
-    //   </form>
-    // </div>
-
     <div className="flex-grow flex-shrink flex flex-col">
       <div className="flex p-2 items-center flex-shrink-0">
         <AiOutlineArrowLeft size={20} onClick={() => navigate(-1)} />
@@ -165,7 +117,7 @@ const EditRole: React.FC = () => {
           </button>
           <button
             type="submit"
-            className="bg-violet-700 text-white border rounded-full px-8 h-9"
+            className="bg-violet-900 text-white border rounded-full px-8 h-9"
           >
             Save
           </button>

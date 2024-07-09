@@ -207,7 +207,7 @@ const AddUser = ({ onCancel, onRoleAdded }: AddRoleProps) => {
           </button>
           <button
             type="submit"
-            className="bg-violet-700 text-white border rounded-full px-8 h-9"
+            className="bg-violet-900 text-white border rounded-full px-8 h-9"
           >
             Save
           </button>

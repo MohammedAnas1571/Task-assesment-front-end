@@ -5,11 +5,10 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import axios from "axios";
 import { z } from "zod";
 import toast from "react-hot-toast";
+import { emailSchema } from "../validation/formValidations";
+import handleApiError from "../utils/errorHandler/APiErrorHandler";
 
-// Define Zod schema for form validation
-const emailSchema = z.object({
-  email: z.string().email("Invalid email address").nonempty("Email is required"),
-});
+
 
 type EmailFormData = z.infer<typeof emailSchema>;
 
@@ -29,8 +28,9 @@ export default function ForgetPasswordDialog({ children }: Props) {
         withCredentials: true,
       });
       toast.success("Reset link sent to your email");
-    } catch (error) {
-      toast.error("Failed to send reset link");
+      navigate(-1)
+    } catch (err) {
+     handleApiError(err)
     }
   };
 

@@ -2,7 +2,7 @@ import { Column, useSortBy, useTable, HeaderGroup } from "react-table";
 
 interface TableContentProps {
   columns: Column<any>[];
-  data: any[]; 
+  data: any[];
 }
 
 const TableContent: React.FC<TableContentProps> = ({ columns, data }) => {
@@ -64,7 +64,7 @@ const TableContent: React.FC<TableContentProps> = ({ columns, data }) => {
                     <td
                       key={key}
                       {...rest}
-                      className="px-6 py-4 whitespace-nowrap text-sm  text-gray-500 capitalize"
+                      className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 capitalize"
                     >
                       {cell.render('Cell')}
                     </td>

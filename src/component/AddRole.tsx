@@ -55,7 +55,7 @@ const AddRole = ({ onCancel, onRoleAdded }: AddRoleProps) => {
           </button>
           <button
             type="submit"
-            className="bg-violet-700 text-white border rounded-lg p-1 w-20"
+            className="bg-violet-900 text-white border rounded-lg p-1 w-20"
           >
             Save
           </button>
